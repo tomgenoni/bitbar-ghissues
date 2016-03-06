@@ -19,6 +19,17 @@ var options = {
   path: '/repos/tomgenoni/bitbar-ghissues/issues?access_token='
 };
 
+function fixedIssues(body) {
+  body.map(function(issues){
+    if ( issues.pull_request ) {
+      var comments = issues.body;
+      var match = comments.match(/Fixes #([0-9]+)/im);
+      if ( match ) {
+        arr.push(match[1]);
+      }
+    }
+  });
+}
 
 function allIssues(body) {
   
@@ -49,9 +60,9 @@ function issueCount(body) {
 }
 
 function handleResponse(body) {
-  var countPRs = issueCount(body)[1];
-  var countIssues = issueCount(body)[0];
-  var foo = allIssues(body)[1];
+  // var countPRs = issueCount(body)[1];
+  // var countIssues = issueCount(body)[0];
+  // var foo = allIssues(body)[1];
 }
 
 https.get(options, function(res) {
