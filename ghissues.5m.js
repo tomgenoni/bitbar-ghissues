@@ -10,9 +10,9 @@
 // https://api.github.com/repos/facebook/react/issues?access_token=
 
 
-$USER = "facebook";
-$REPOSITORY = "react";
-$REPOSITORY_SHORTNAME = "react";
+$ORG = "optimizely";
+$REPOSITORY = "oui";
+$REPOSITORY_SHORTNAME = "oui";
 $ACCESS_TOKEN = "";
 
 var https = require('https');
@@ -20,7 +20,7 @@ var https = require('https');
 var options = {
   host: 'api.github.com',
   headers: {'user-agent': 'Mozilla/5.0'},
-  path: '/repos/'+$USER+'/'+$REPOSITORY+'/issues?access_token=' + $ACCESS_TOKEN + '&per_page=100'
+  path: '/repos/'+$ORG+'/'+$REPOSITORY+'/issues?access_token=' + $ACCESS_TOKEN + '&per_page=100'
 };
 
 function fixedIssues(body) {
