@@ -8,7 +8,7 @@
 // <bitbar.dependencies>node.js</bitbar.dependencies>
 // <bitbar.image></bitbar.image>
 
-// https://api.github.com/repos/optimizely/oui/issues?access_token=3e9316e63711cf14f010e4865039850a2a658b95
+// https://api.github.com/repos/tomgenoni/bitbar-ghissues/issues?access_token=
 
 
 var https = require('https');
@@ -16,38 +16,9 @@ var https = require('https');
 var options = {
   host: 'api.github.com',
   headers: {'user-agent': 'Mozilla/5.0'},
-  path: '/repos/optimizely/oui/issues?access_token=3e9316e63711cf14f010e4865039850a2a658b95'
+  path: '/repos/tomgenoni/bitbar-ghissues/issues?access_token='
 };
 
-
-function fixed(body) {
-
-  var output = body.map(function(issues){
-    var terms = [
-      'close',
-      'closes',
-      'closed',
-      'fix',
-      'fixes',
-      'fixed',
-      'resolve',
-      'resolves',
-      'resolved'
-    ];
-    
-    if ( issues.pull_request ) {
-      var comments = issues.body;
-      
-      terms.forEach(function(term) {
-        var regex = new RegExp(term + " #([0-9]+)", "gi");
-        var issueNum = comments.match(regex);
-        if (issueNum != null) {
-          console.log(issueNum);
-        }
-      });
-    }
-  });
-}
 
 function outputPRs(body) {
   var output = body.map(function(issues){
@@ -55,23 +26,23 @@ function outputPRs(body) {
       return ['#', issues.number, ' ', issues.title, ' | href=', issues.html_url,'\n'].join('');
     }
   }).join('\n');
+  
   return output;
 }
 
 function issueCount(body) {
   var p = 0;
-  body.map(function(issues){
+  var output = body.map(function(issues){
     if ( issues.pull_request ) {
       p++;
     }
   });
-  var i = body.length - p;
+  var i = body.length - output;
   return [i, p];
 }
 
 function handleResponse(body) {
-  var countPRs = issueCount(body)[1];
-  var countIssues = issueCount(body)[0];
+  console.log(body);
 }
 
 https.get(options, function(res) {
