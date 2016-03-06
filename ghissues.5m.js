@@ -7,15 +7,20 @@
 // <bitbar.desc>List issues</bitbar.desc>
 // <bitbar.dependencies>node.js</bitbar.dependencies>
 
-// https://api.github.com/repos/tomgenoni/bitbar-ghissues/issues?access_token=
+// https://api.github.com/repos/facebook/react/issues?access_token=
 
+
+$USER = "facebook";
+$REPOSITORY = "react";
+$REPOSITORY_SHORTNAME = "react";
+$ACCESS_TOKEN = "";
 
 var https = require('https');
 
 var options = {
   host: 'api.github.com',
   headers: {'user-agent': 'Mozilla/5.0'},
-  path: '/repos/tomgenoni/bitbar-ghissues/issues?access_token='
+  path: '/repos/'+$USER+'/'+$REPOSITORY+'/issues?access_token=' + $ACCESS_TOKEN + '&per_page=100'
 };
 
 function fixedIssues(body) {
@@ -27,7 +32,7 @@ function fixedIssues(body) {
   body.map(function(issues){
     if ( issues.pull_request ) {
       var comments = issues.body;
-    
+  
       closeTerms.forEach(function(term) {
         var regex = new RegExp(term + " #([0-9]+)", "ig");
         var matches = comments.match(regex);
@@ -84,7 +89,8 @@ function handleResponse(body) {
   var listIssues = allIssues(body)[1];
   var listPRs = allIssues(body)[0];
   
-  console.log("oui " + countPRs + "/" + countIssues);
+  console.log($REPOSITORY_SHORTNAME + " " + countPRs + "/" + countIssues);
+  
   console.log("---");
   console.log("Pull Requests " + countPRs);
   console.log(listPRs);
