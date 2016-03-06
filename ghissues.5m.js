@@ -20,14 +20,21 @@ var options = {
 };
 
 
-function outputPRs(body) {
-  var output = body.map(function(issues){
+function allIssues(body) {
+  
+  var issues = body.map(function(issues){
     if ( issues.pull_request ) {
       return ['#', issues.number, ' ', issues.title, ' | href=', issues.html_url,'\n'].join('');
     }
   }).join('\n');
   
-  return output;
+  var prs = body.map(function(issues){
+    if ( !issues.pull_request ) {
+      return ['#', issues.number, ' ', issues.title, ' | href=', issues.html_url,'\n'].join('');
+    }
+  }).join('\n');
+  
+  return [issues, prs];
 }
 
 function issueCount(body) {
@@ -42,7 +49,9 @@ function issueCount(body) {
 }
 
 function handleResponse(body) {
-  console.log(body);
+  var countPRs = issueCount(body)[1];
+  var countIssues = issueCount(body)[0];
+  var foo = allIssues(body)[1];
 }
 
 https.get(options, function(res) {
