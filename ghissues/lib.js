@@ -53,12 +53,12 @@ function allIssues(body) {
   }).join('\n');
 
   var prs = body.map(function(issues){
-    var color = "#000000";
+    var color = "";
     if ( !issues.pull_request ) {
       if ( fixed.indexOf(issues.number.toString()) > -1 ) {
-        color = "#aaaaaa";
+        color = "color=#aaaaaa";
       }
-      return [issues.title, ' #', issues.number,' (', issues.user.login, ') | href=', issues.html_url, ' color=', color, '\n'].join('');
+      return [issues.title, ' #', issues.number,' (', issues.user.login, ') | href=', issues.html_url, ' ', color, '\n'].join('');
     }
   }).join('\n');
 
