@@ -48,7 +48,7 @@ function allIssues(body) {
 
   var issues = body.map(function(issues){
     if ( issues.pull_request ) {
-      return [issues.title, ' #', issues.number, ' | href=', issues.html_url,'\n'].join('');
+      return [issues.title, ' - #', issues.number, ' | href=', issues.html_url,'\n'].join('');
     }
   }).join('\n');
 
@@ -58,7 +58,7 @@ function allIssues(body) {
       if ( fixed.indexOf(issues.number.toString()) > -1 ) {
         color = "color=#aaaaaa";
       }
-      return [issues.title, ' #', issues.number,' (', issues.user.login, ') | href=', issues.html_url, ' ', color, '\n'].join('');
+      return [issues.title, ' - #', issues.number,' (', issues.user.login, ') | href=', issues.html_url, ' ', color, '\n'].join('');
     }
   }).join('\n');
 
