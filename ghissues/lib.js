@@ -3,7 +3,7 @@ var https = require('https');
 var options = {
   host: 'api.github.com',
   headers: {'user-agent': 'Mozilla/5.0'},
-  path: '/repos/'+$ORG+'/'+$REPOSITORY+'/issues?access_token=' + $ACCESS_TOKEN + '&per_page=100'
+  path: '/repos/'+$ORG+'/'+$REPOSITORY+'/issues?GITHUB_ACCESS_TOKEN=' + $GITHUB_ACCESS_TOKEN + '&per_page=100'
 };
 
 https.get(options, function(res) {
@@ -82,7 +82,7 @@ function handleResponse(body) {
   var listIssues = allIssues(body)[1];
   var listPRs = allIssues(body)[0];
 
-  console.log($REPOSITORY_SHORTNAME + " " + countPRs + "/" + countIssues);
+  console.log($BITBAR_TITLE + " " + countPRs + "/" + countIssues);
 
   console.log("---");
   console.log("Pull Requests " + countPRs);

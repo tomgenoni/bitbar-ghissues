@@ -9,7 +9,7 @@
 
 $ORG = "optimizely";
 $REPOSITORY = "oui";
-$REPOSITORY_SHORTNAME = "oui";
-$ACCESS_TOKEN = "";
+$BITBAR_TITLE = "oui";
+$GITHUB_ACCESS_TOKEN = "";
 
 var lib = require('./ghissues/lib.js');
