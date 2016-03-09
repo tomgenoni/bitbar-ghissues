@@ -2,7 +2,7 @@
 
 ![alt tag](https://raw.githubusercontent.com/tomgenoni/bitbar-ghissues/master/bit.png)
 
-This uses the super cool [Bitbar](https://github.com/matryer/bitbar) to retrieve and display open issues and pull requests for a given repository.
+This uses the super cool [Bitbar](https://github.com/matryer/bitbar) to retrieve and display open issues and pull requests, up to 100, for a given repository. If your respository has more issues than that then this probably isn't for you.
 
 In addition it also searches the comments of each pull request for "fixes". If an issue has been referenced in a pull request comment using any of the [special keyword syntax](https://help.github.com/articles/closing-issues-via-commit-messages/) the issue will be colored light gray. In image above note the fifth issue: It's gray because in the first pull request #259 there's a comment that includes "Fixes #237".
 
