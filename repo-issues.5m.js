@@ -1,15 +1,15 @@
 #!/usr/bin/env /usr/local/bin/node
 
-// <bitbar.title>Github Issues</bitbar.title>
+// <bitbar.title>Github Repository Issues</bitbar.title>
 // <bitbar.version>v1.0</bitbar.version>
 // <bitbar.author>Tom Genoni</bitbar.author>
+// <bitbar.desc>Lists all pull requests and issues, up to 100 total.</bitbar.desc>
 // <bitbar.author.github>tomgenoni</bitbar.author.github>
-// <bitbar.desc>List issues</bitbar.desc>
 // <bitbar.dependencies>node.js</bitbar.dependencies>
 
-$ORG = "optimizely";
-$REPOSITORY = "oui";
-$BITBAR_TITLE = "oui";
+$ORG = "matryer";
+$REPOSITORY = "bitbar";
+$BITBAR_TITLE = "bitbar";
 $GITHUB_ACCESS_TOKEN = "";
 
-var lib = require('./ghissues/lib.js');
+var lib = require('./lib/lib.js');
