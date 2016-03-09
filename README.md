@@ -37,4 +37,4 @@ Now you can reopen the Bitbar application and if all went well you should see it
 ## Troubleshooting
 
 - If you suspect a file permissions error run `chmod +x repo-issues.5m.js`.
-- You can change the refresh frequency by changing the filename as described in the [Bitbar](https://github.com/matryer/bitbar) readme.
+- You can change the refresh frequency by changing the filename as described in the [Bitbar readme](https://github.com/matryer/bitbar) .
