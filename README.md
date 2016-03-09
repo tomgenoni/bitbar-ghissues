@@ -4,7 +4,7 @@
 
 This uses the super cool [Bitbar](https://github.com/matryer/bitbar) to retrieve and display open issues and pull requests for a given repository.
 
-The plugin also looks in the comments of each pull request for "fixes". If an issue has been referenced in a pull request comment using the [special keywords](https://help.github.com/articles/closing-issues-via-commit-messages/) the issue will be colored light gray. In image above note the fifth issue: It's gray because in the first pull request #259 there's a comment that includes "Fixes #237".
+In addition it also searches the comments of each pull request for "fixes". If an issue has been referenced in a pull request comment using any of the [special keyword syntax](https://help.github.com/articles/closing-issues-via-commit-messages/) the issue will be colored light gray. In image above note the fifth issue: It's gray because in the first pull request #259 there's a comment that includes "Fixes #237".
 
 I use this plugin as a todo list so it's helpful to know if an issue has already been addressed, even though it hasn't been closed yet.
 
@@ -33,3 +33,8 @@ $GITHUB_ACCESS_TOKEN = ""; <-- your Github personal access token
 ```
 
 Now you can reopen the Bitbar application and if all went well you should see it appear in your menu bar.
+
+## Troubleshooting
+
+- If you suspect a file permissions error run `chmod +x repo-issues.5m.js`.
+- You can change the refresh frequency by changing the filename as described in the [Bitbar](https://github.com/matryer/bitbar) readme.
