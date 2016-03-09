@@ -19,7 +19,7 @@ I use this plugin as a todo list so it's helpful to know if an issue has already
  
 ## Configure
 
-In order to use the script you'll want to open `repo-issues.5m.js` and populate the variables. Note you can rename the file anything you want, like `myrepo.5m.js`. See the [Bitbar readme](https://github.com/matryer/bitbar) for file name syntax.
+In order to use the script you'll want to open `repo-issues.5m.js` and populate the variables. Note you can rename the file anything you want, like `myrepo.5m.js`. See the [Bitbar readme](https://github.com/matryer/bitbar) for file name syntax. If you want to monitor multiple respositories simply duplicate the `repo-issues.5m.js` file and update its configuration variable values.
 
 You'll need to generate a [Github access token](https://github.com/settings/tokens). On that page click "Generate Token" in the upper right and on the following page "Generate Token" again. Your token will be a long string of letters and numbers.
 
@@ -33,8 +33,6 @@ $GITHUB_ACCESS_TOKEN = ""; <-- your Github personal access token
 ```
 
 Now you can reopen the Bitbar application and if all went well you should see it appear in your menu bar.
-
-If you want to monitor multiple respositories simply duplicate the `repo-issues.5m.js` file and update the configuration variable values.
 
 ## Troubleshooting
 
