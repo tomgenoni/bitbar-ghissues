@@ -4,7 +4,7 @@
 
 This uses the super cool [Bitbar](https://github.com/matryer/bitbar) to retrieve and display open issues and pull requests, up to 100, for a given repository.
 
-In addition it also searches the comments of each pull request for "fixes". If an issue has been referenced in a pull request comment using any of the [special keyword syntax](https://help.github.com/articles/closing-issues-via-commit-messages/) the issue will be colored light gray. In image above note the fifth issue: It's gray because in the first pull request #259 there's a comment that includes "Fixes #237".
+In addition it also searches the comments of each pull request for "fixes". If an issue has been referenced in a pull request comment using any of the [special keywords](https://help.github.com/articles/closing-issues-via-commit-messages/) the issue will be colored light gray. In image above note the fifth issue: It's gray because in the first pull request #259 there's a comment that includes "Fixes #237".
 
 I use this plugin as a todo list so it's helpful to know if an issue has already been addressed, even though the fix hasn't yet been merged and closed.
 
