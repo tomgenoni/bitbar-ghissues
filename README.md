@@ -13,7 +13,7 @@ I use this plugin as a todo list so it's helpful to know if an issue has already
 - Download the [Bitbar application](https://github.com/matryer/bitbar/releases/latest)
 - Run and set the "Plugin Folder...". I put mine in `~/Documents/Bitbar/`.
 - Quit Bitbar (you'll restart it later).
-- Download [this repository](https://github.com/tomgenoni/bitbar-ghissues/archive/master.zip) and copy the following into your Bitbar plugins bar.
+- Download [this repository](https://github.com/tomgenoni/bitbar-ghissues/archive/master.zip) and copy the following into your Bitbar plugins folder.
  - `repo-issues.5m.js`
  - `lib` directory
  
