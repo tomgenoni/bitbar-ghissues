@@ -1,5 +1,7 @@
 # Github issues in your menubar
 
+![alt tag](https://raw.githubusercontent.com/tomgenoni/bitbar-ghissues/master/bit.png)
+
 This uses the super cool [Bitbar](https://github.com/matryer/bitbar) to retrieve and display open issues and pull requests for a given repository.
 
 The plugin also looks in the comments of each pull request for "fixes". If an issue has been referenced in a pull request comment using the [special keywords](https://help.github.com/articles/closing-issues-via-commit-messages/) the issue will be colored light gray in the menu.
@@ -9,7 +11,7 @@ I use this plugin as a todo list so it's helpful to know if an issue has already
 ## Installation
 
 - Download the [Bitbar application](https://github.com/matryer/bitbar/releases/latest)
-- Run and set the "Plugin Folder...". I put mine `~/Documents/Bitbar/`.
+- Run and set the "Plugin Folder...". I put mine in `~/Documents/Bitbar/`.
 - Quit Bitbar (you'll restart it later).
 - Download [this repository](https://github.com/tomgenoni/bitbar-ghissues/archive/master.zip) and copy the following into your Bitbar plugins bar.
  - `repo-issues.5m.js`
