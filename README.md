@@ -21,7 +21,7 @@ I use this plugin as a todo list so it's helpful to know if an issue has already
 
 In order to use the script you'll want to open `repo-issues.5m.js` and populate the variables.
 
-You'll need to generate a [Github access token](https://github.com/settings/tokens). You can click "Generate Token" in the upper right and on the following page "Generate Token" again. Your token will be a long string of letters and numbers.
+You'll need to generate a [Github access token](https://github.com/settings/tokens). On that page click "Generate Token" in the upper right and on the following page "Generate Token" again. Your token will be a long string of letters and numbers.
 
 For example, if you want to monitor https://github.com/matryer/bitbar your configuration would look like:
 
