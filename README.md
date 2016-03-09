@@ -2,11 +2,11 @@
 
 ![alt tag](https://raw.githubusercontent.com/tomgenoni/bitbar-ghissues/master/bit.png)
 
-This uses the super cool [Bitbar](https://github.com/matryer/bitbar) to retrieve and display open issues and pull requests, up to 100, for any public or private repo you have permissions for. In the image above I'm monitoring Bitbar's repo which has 3 pull requests and 33 issues.
+This uses the super cool [Bitbar](https://github.com/matryer/bitbar) to retrieve and display open Issues and Pull Requests, up to 100, for any public or private repo you have permissions for. In the image above I'm monitoring Bitbar's repo which has 3 Pull Requests and 33 Issues.
 
-In addition this script also searches the comments of each pull request for "fixes". If an issue has been referenced in a pull request comment using any of Github's [special keywords](https://help.github.com/articles/closing-issues-via-commit-messages/) the issue will be colored light gray. In image above note the fifth issue. It's gray because in the first pull request (#259) there's a comment that includes "Fixes #237".
+In addition this script also searches the comments of each Pull Request for "fixes". If an Issue has been referenced in a Pull Request comment using any of Github's [special keywords](https://help.github.com/articles/closing-issues-via-commit-messages/) the Issue will be colored light gray. In image above note the fifth Issue. It's gray because in the first Pull Request (#259) there's a comment that includes "Fixes #237".
 
-I use this plugin as a todo list and I find it helpful to know if an issue has already been addressed, even though the fix hasn't yet been merged and closed.
+I use this plugin as a todo list and I find it helpful to know if an Issue has already been addressed, even though the fix hasn't yet been merged and closed.
 
 ## Installation
 
