@@ -34,7 +34,7 @@ Refresh or reopen the Bitbar application and if all went well you should see it 
 ### Notes
 
 - You'll need to generate a [Github access token](https://github.com/settings/tokens). On that page click "Generate Token" in the upper right and on the following page "Generate Token" again. Your token will be a long string of letters and numbers.
-- You can rename the file anything you want, like `myrepo.5m.js`. See the [Bitbar readme](https://github.com/matryer/bitbar) for file name syntax. If you want to monitor multiple respositories simply duplicate the `repo-issues.5m.js` file and update its configuration variable values.
+- You can rename the plugin to anything you want, like `myrepo.5m.js`. See the [Bitbar readme](https://github.com/matryer/bitbar) for file name syntax. If you want to monitor multiple respositories simply duplicate the `repo-issues.5m.js` file and update its configuration variable values.
 
 ## Troubleshooting
 
