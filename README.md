@@ -12,7 +12,6 @@ I use this plugin as a todo list and I find it helpful to know if an Issue has a
 
 - Download the [Bitbar application](https://github.com/matryer/bitbar/releases/latest)
 - Run and set the "Plugin Folder...". I put mine in `~/Documents/Bitbar/`.
-- Quit Bitbar (you'll restart it later).
 - Download [this repository](https://github.com/tomgenoni/bitbar-ghissues/archive/master.zip) and copy the following into your Bitbar plugins folder.
  - `repo-issues.5m.js`
  - `lib` directory
@@ -30,7 +29,7 @@ $BITBAR_TITLE = "bitbar"; <-- the title you want to appear in the menu bar
 $GITHUB_ACCESS_TOKEN = ""; <-- your Github personal access token
 ```
 
-Now you can reopen the Bitbar application and if all went well you should see it appear in your menu bar.
+Refresh or reopen the Bitbar application and if all went well you should see it appear in your menu bar.
 
 ### Notes
 
