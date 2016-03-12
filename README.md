@@ -1,6 +1,6 @@
 # Github issues in your menubar
 
-![alt tag](https://raw.githubusercontent.com/tomgenoni/bitbar-ghissues/master/bitbar.png)
+![alt tag](https://raw.githubusercontent.com/tomgenoni/bitbar-ghissues/master/bb.png)
 
 This uses the super cool [Bitbar](https://github.com/matryer/bitbar) to retrieve and display open Issues and Pull Requests, up to 100, for any public or private repo you have permissions for. In the image above I'm monitoring Bitbar's repo which has 5 Pull Requests and 35 Issues.
 
