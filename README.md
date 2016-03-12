@@ -6,7 +6,7 @@ This uses the super cool [Bitbar](https://github.com/matryer/bitbar) to retrieve
 
 In addition this script also searches the comments of each Pull Request for "fixes". If an Issue has been referenced in a Pull Request comment using any of Github's [special keywords](https://help.github.com/articles/closing-issues-via-commit-messages/) the Issue will be colored light gray. In image above note the first Issue. It's gray because in the second Pull Request (#270) there's a comment that includes "Resolves #269".
 
-I use this plugin as a todo list and I find it helpful to know if an Issue has already been addressed, even though the fix hasn't yet been merged and closed.
+I use this plugin as a todo list and find it helpful to know if an Issue has already been addressed, even though the fix hasn't yet been merged and closed.
 
 ## Installation
 
