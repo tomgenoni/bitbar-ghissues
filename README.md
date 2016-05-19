@@ -23,6 +23,7 @@ Open `repo-issues.5m.js` and populate the variables.
 For example, if you want to monitor https://github.com/matryer/bitbar your configuration would look like:
 
 ```
+$HOSTNAME = ""; <-- only for enterprise users, e.g., `github.tinderforcats.com/api/v3`
 $ORG = "matryer"; <-- your organization name or username
 $REPOSITORY = "bitbar"; <-- the repo you want to monitor
 $BITBAR_TITLE = "bitbar"; <-- the title you want to appear in the menu bar
@@ -33,12 +34,12 @@ Refresh or reopen the Bitbar application and if all went well you should see it 
 
 ### Notes
 
-- You'll need to generate a [Github access token](https://github.com/settings/tokens). On that page click "Generate Token" in the upper right and on the following page "Generate Token" again. Your token will be a long string of letters and numbers. 
+- You'll need to generate a [Github access token](https://github.com/settings/tokens). On that page click "Generate Token" in the upper right and on the following page "Generate Token" again. Your token will be a long string of letters and numbers.
 - You can rename the plugin to anything you want, like `myrepo.5m.js`. See the [Bitbar readme](https://github.com/matryer/bitbar) for file name syntax. If you want to monitor multiple respositories simply duplicate the `repo-issues.5m.js` file and update its configuration variable values.
 
 ## Troubleshooting
 
-- If you've installed Node in a non-standard location you will need to update your node path at the top of the file. If you're not sure you can check your path in the terminal using `which node`. 
+- If you've installed Node in a non-standard location you will need to update your node path at the top of the file. If you're not sure you can check your path in the terminal using `which node`.
 - If you suspect a file permissions error run `chmod +x repo-issues.5m.js`.
 - You can change the refresh frequency by changing the filename as described in the [Bitbar readme](https://github.com/matryer/bitbar) .
 - Github enforces [rate limits](https://developer.github.com/v3/#rate-limiting) so keep that in mind when adjusting the refresh frequency. If you exceed the hourly limit the script will fail until the rate limiting period expires.

@@ -7,6 +7,7 @@
 // <bitbar.author.github>tomgenoni</bitbar.author.github>
 // <bitbar.dependencies>node.js</bitbar.dependencies>
 
+$HOSTNAME = ""; // For enterprise Github accounts, e.g., github.tinderforcats.com/api/v3
 $ORG = "matryer";
 $REPOSITORY = "bitbar";
 $BITBAR_TITLE = "bitbar";
