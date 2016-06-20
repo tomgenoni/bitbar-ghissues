@@ -21,10 +21,10 @@ Open `repo-issues.5m.js` and populate the variables.
 For example, if you want to monitor https://github.com/matryer/bitbar your configuration would look like:
 
 ```
-$HOSTNAME = ""; <-- only for enterprise users, e.g., `github.tinderforcats.com/api/v3`
-$ORG = "matryer"; <-- your organization name or username
-$REPOSITORY = "bitbar"; <-- the repo you want to monitor
-$BITBAR_TITLE = "bitbar"; <-- the title you want to appear in the menu bar
+$HOSTNAME = "";            <-- only for enterprise users, e.g., `github.tinderforcats.com/api/v3`
+$ORG = "matryer";          <-- your organization name or username
+$REPOSITORY = "bitbar";    <-- the repo you want to monitor
+$BITBAR_TITLE = "bitbar";  <-- the title you want to appear in the menu bar
 $GITHUB_ACCESS_TOKEN = ""; <-- your Github personal access token
 ```
 
